@@ -14,13 +14,13 @@ tracks:
 ---
 
 <section class="col-sm-12">
-  <img class="img-responsive" src="/assets/Schedule.png" alt="Schema" />
+  <img class="img-responsive" src="/{{site.baseurl}}/assets/Schedule.png" alt="Schema" />
 </section>
 <p>&nbsp;</p>
 <div class="well col-sm-12">
-  <a href="/assets/Schedule.pdf" target="_blank"><span class="btn btn-rdw">Download Agenda (PDF)</span></a>
+  <a href="/{{site.baseurl}}/assets/Schedule.pdf" target="_blank"><span class="btn btn-rdw">Download Agenda (PDF)</span></a>
   &nbsp;
-  <a href="/assets/images/map.png" target="_blank"><span class="btn btn-rdw">Plattegrond</span></a>
+  <a href="/{{site.baseurl}}/assets/images/map.png" target="_blank"><span class="btn btn-rdw">Plattegrond</span></a>
 </div>
 {% for track in page.tracks %}
   {% assign sorted_sessies = site.sessies | where: "track", track | sort:"tijd" %}
